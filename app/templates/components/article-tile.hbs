@@ -1,0 +1,14 @@
+<li>
+<div class="stories">
+  <div class="row">
+    {{#link-to 'article' article.id}}
+    <div class="col-lg-3 col-lg-offset-3 article-img article-body">
+      <img src="{{article.img}}" alt="fat man" />
+    </div>
+    <div class="col-lg-3 article-text article-body">
+      {{article.title}} <br> {{article.author}} <br> {{article.body}} <br> {{article.time}}
+    </div>
+    {{/link-to}}
+  </div>
+</div>
+</li>

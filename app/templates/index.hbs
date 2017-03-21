@@ -1,0 +1,9 @@
+<h1>Articles:</h1>
+
+{{new-article saveArticle2="saveArticle3"}}
+
+<ul>
+  {{#each model as |article|}}
+     {{article-tile article=article}}
+  {{/each}}
+</ul>

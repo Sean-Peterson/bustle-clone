@@ -1,0 +1,16 @@
+<div class="article-body">
+  <h1>{{model.author}}</h1>
+  <div class="article-img">
+    <img src="{{model.img}}" alt="" />
+  </div>
+  <div class="article-text">
+    <h3>{{model.title}}</h3>
+    <p>
+      {{model.body}}
+    </p>
+  </div>
+</div>
+<button {{action 'destroyArticle' model}}>Delete</button>
+{{update-article article=model update="update" destroyArticle="destroyArticle"}}
+
+<!-- {{rental-detail rental=model destroyRental="destroyRental"}} -->
